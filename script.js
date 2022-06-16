@@ -28,7 +28,7 @@ function playSound(sound){
 
         setInterval(()=>{
             keyElement.classList.remove('active');// remove a cor amarela das teclas apos tocar o som
-        }, 300);
+        }, 400);
     }
     
 }
