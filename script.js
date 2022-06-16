@@ -34,9 +34,9 @@ function playSound(sound){
 }
 
 function playComposition(songArray){// função para não tocar todos os sons juntos, 
-    let wait = 0;
-    let timer = qs('.timer').value;//para tocar na sequencia com intervalo de 350ms entre eles para ser audivel
-    let ms = parseInt(timer);
+    let wait = 0;                   //para tocar na sequencia com intervalo de 350ms entre eles
+    let timer = qs('.timer').value; //let para mudar o intervalo entre os sons
+    let ms = parseInt(timer);       //let para transformar o valor digitado string em Number
     for(let songItem of songArray){ 
         setTimeout(()=>{
             playSound(`key${songItem}`);
