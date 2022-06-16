@@ -8,7 +8,7 @@ document.body.addEventListener('keyup', (event)=>{
 qs('.composer .tocar').addEventListener('click', ()=> {
     let song = qs('#input').value; 
     
-    if(song !== '' ){ //se a let song for deferente de vazio... 
+    if(song !== '' ){ 
         let songArray = song.split(''); 
         playComposition(songArray); 
         
